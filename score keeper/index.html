@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Ping Pong Score Keeper</title>
+</head>
+<body>
+    <header>
+        <label class="switch" for="darkModeToggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+                <img id="dark" src="moon.png" alt="Dark Mode">
+
+            
+        </label>
+    </header>
+    <div class="container">
+        <div class="section">
+            <div class="content has-text-centered">
+                <img id="pingpong" src="https://cdn.pixabay.com/photo/2022/05/23/16/05/table-tennis-7216579_960_720.png">
+                <h1 id="imagelabel" class="title is-3">Ping Pong Score Keeper</h1>
+                <h2 id="score" class="subtitle is-4"><span id="player1">0</span> to <span id="player2">0</span></h2>
+                <p>Use the button below to keep score</p>
+                <div class="field">    
+                    <label>Playing to</label>
+                    <div class="control">
+                        <div class="select">
+                            <select id="playingto" name="">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                                <option value="10">10</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-mobile">   
+                        <button id="player1score"class="button is-fullwidth" >+1 Player One</button>
+                
+                    </div>
+                    <div class="column is-mobile">
+                        <button id="player2score"class="button is-fullwidth" >+1 Player Two</button>
+                    </div>
+                    <div class="column is-mobile">
+                        <button id="reset" class="button is-fullwidth">Reset</button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
